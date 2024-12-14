@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 918aaa0f449b7aa4ab72ac65d5a1e082
+timeCreated: 1492346684
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Body
+    100002: //RootNode
+    100004: Eye
+    100006: Group10
+    100008: Group12
+    100010: Group2
+    100012: Group3
+    100014: Group8
+    100016: LLeg
+    100018: LShoulder
+    100020: RLeg
+    100022: RShoulder
+    100024: Visor
+    100026: ZBrush_defualt_group
+    400000: Body
+    400002: //RootNode
+    400004: Eye
+    400006: Group10
+    400008: Group12
+    400010: Group2
+    400012: Group3
+    400014: Group8
+    400016: LLeg
+    400018: LShoulder
+    400020: RLeg
+    400022: RShoulder
+    400024: Visor
+    400026: ZBrush_defualt_group
+    2300000: Body
+    2300002: Eye
+    2300004: Group10
+    2300006: Group12
+    2300008: Group2
+    2300010: Group3
+    2300012: Group8
+    2300014: LLeg
+    2300016: LShoulder
+    2300018: RLeg
+    2300020: RShoulder
+    2300022: Visor
+    2300024: ZBrush_defualt_group
+    3300000: Body
+    3300002: Eye
+    3300004: Group10
+    3300006: Group12
+    3300008: Group2
+    3300010: Group3
+    3300012: Group8
+    3300014: LLeg
+    3300016: LShoulder
+    3300018: RLeg
+    3300020: RShoulder
+    3300022: Visor
+    3300024: ZBrush_defualt_group
+    4300000: ZBrush_defualt_group
+    4300002: Body
+    4300004: Group8
+    4300006: Group12
+    4300008: Group2
+    4300010: RLeg
+    4300012: Group10
+    4300014: Eye
+    4300016: RShoulder
+    4300018: LShoulder
+    4300020: Visor
+    4300022: Group3
+    4300024: LLeg
+    7400000: Walk
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Body
+        weight: 1
+      - path: Body/Eye
+        weight: 1
+      - path: Body/Group2
+        weight: 1
+      - path: Body/Group3
+        weight: 1
+      - path: Body/Group8
+        weight: 1
+      - path: Body/Group10
+        weight: 1
+      - path: Body/Group12
+        weight: 1
+      - path: Body/LLeg
+        weight: 1
+      - path: Body/LShoulder
+        weight: 1
+      - path: Body/RLeg
+        weight: 1
+      - path: Body/RShoulder
+        weight: 1
+      - path: Body/Visor
+        weight: 1
+      - path: ZBrush_defualt_group
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
