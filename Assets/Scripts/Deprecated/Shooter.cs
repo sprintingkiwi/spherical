@@ -29,7 +29,7 @@ public class Shooter : Enemy
             shootLastTime = Time.time;
             Bullet b = (Instantiate(bullet, transform.position, transform.rotation) as GameObject).GetComponent<Bullet>();
             b.owner = gameObject;
-            b.GetComponent<Rigidbody>().velocity = distance.normalized * b.speed;
+            b.GetComponent<Rigidbody>().linearVelocity = distance.normalized * b.speed;
             Destroy(b.gameObject, b.lifeTime);
         }
     }

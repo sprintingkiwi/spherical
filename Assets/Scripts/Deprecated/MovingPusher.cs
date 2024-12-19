@@ -23,7 +23,7 @@ public class MovingPusher : GravityHook
     public override void Update()
     {
         base.Update();
-        rb.velocity = direction.normalized * speed;
+        rb.linearVelocity = direction.normalized * speed;
         actualPos = transform.position;
         if ((actualPos - startPos).magnitude > direction.magnitude)
         {

@@ -21,7 +21,7 @@ public class LinePatrol : MonoBehaviour
     // Update is called once per frame
     public virtual void Update()
     {
-        rb.velocity = direction.normalized * speed;
+        rb.linearVelocity = direction.normalized * speed;
         actualPos = transform.position;
         if ((actualPos - startPos).magnitude > direction.magnitude)
         {

@@ -20,11 +20,11 @@ public class Follower : Enemy
         if (distance.magnitude > minDistance)
         {
             //rb.AddForce(distance.normalized * speed);
-            rb.velocity = distance.normalized * speed;
+            rb.linearVelocity = distance.normalized * speed;
         }
         else
         {
-            rb.velocity = new Vector3(0, 0, 0);
+            rb.linearVelocity = new Vector3(0, 0, 0);
         }        
     }
 }

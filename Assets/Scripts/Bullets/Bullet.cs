@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
                 if (bulletType == BulletType.pusher)
                 {
-                    hitActor.rb.AddForce(gameObject.GetComponent<Rigidbody>().velocity.normalized * power);
+                    hitActor.rb.AddForce(gameObject.GetComponent<Rigidbody>().linearVelocity.normalized * power);
                 }
                 else if (bulletType == BulletType.explodeOther)
                 {

@@ -16,7 +16,7 @@ public class BouncingBall : Actor
 
         if (transform.position.y > 300)
         {
-            rb.velocity = new Vector3(Random.Range(-30, 30), -200, Random.Range(-30, 30));
+            rb.linearVelocity = new Vector3(Random.Range(-30, 30), -200, Random.Range(-30, 30));
         }
     }
 }

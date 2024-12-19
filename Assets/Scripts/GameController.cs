@@ -95,7 +95,7 @@ public class GameController : SalioBehaviour
             }
             else
             {
-                playerController.rb.velocity = Vector3.zero;
+                playerController.rb.linearVelocity = Vector3.zero;
                 playerController.transform.position = checkpoints[0].transform.position;
                 if (playerIsDead == true)
                 {

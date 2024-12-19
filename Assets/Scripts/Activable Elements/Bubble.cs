@@ -33,11 +33,11 @@ public class Bubble : ActivableElement
             if (playerController.powerButton == true)
             {
                 player.transform.position = transform.position;
-                rb.velocity = ascensionVelocity;
+                rb.linearVelocity = ascensionVelocity;
             }
             if (playerController.powerButtonUp == true)
             {
-                rb.velocity = Vector3.zero;
+                rb.linearVelocity = Vector3.zero;
             }
         }
     }

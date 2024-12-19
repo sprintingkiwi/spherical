@@ -27,14 +27,14 @@ public class Worker : Enemy
         base.Update();
 
         // SELF DESTRUCTION
-        if (rb.velocity.magnitude < 0.1 && selfDestruction == false)
+        if (rb.linearVelocity.magnitude < 0.1 && selfDestruction == false)
         {
             startDestructTime = Time.time;
             selfDestruction = true;
         }
         if (Time.time - startDestructTime > selfDestructionTimer && selfDestruction == true)
         {
-            if (rb.velocity.magnitude < 0.1)
+            if (rb.linearVelocity.magnitude < 0.1)
             {
                 Explode(gameObject);
             }                

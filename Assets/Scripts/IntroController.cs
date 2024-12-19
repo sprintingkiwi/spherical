@@ -20,7 +20,7 @@ public class IntroController : MonoBehaviour
     {
         if (introText.rectTransform.localPosition.y < 791)
         {
-            introText.rectTransform.Translate(movement);
+            introText.rectTransform.Translate(movement * Time.deltaTime);
         }
 
         if (Input.GetButtonDown("Submit"))

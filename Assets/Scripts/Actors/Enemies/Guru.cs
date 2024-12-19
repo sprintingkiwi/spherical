@@ -44,7 +44,7 @@ public class Guru : Enemy
                     shootLastTime = Time.time;
                     Bullet b = (Instantiate(bullet, transform.position, transform.rotation) as GameObject).GetComponent<Bullet>();
                     b.owner = gameObject;
-                    b.GetComponent<Rigidbody>().velocity = targetDirection * b.speed;
+                    b.GetComponent<Rigidbody>().linearVelocity = targetDirection * b.speed;
                     Destroy(b.gameObject, b.lifeTime);
                 }
             }

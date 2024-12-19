@@ -56,7 +56,7 @@ public class Floor : AutonomousElement
         if (collision.gameObject.GetComponent<Rigidbody>() != null)
         {
             Rigidbody orb = collision.gameObject.GetComponent<Rigidbody>();
-            orb.AddForce(orb.velocity.normalized * -friction);
+            orb.AddForce(orb.linearVelocity.normalized * -friction);
         }
     }
 

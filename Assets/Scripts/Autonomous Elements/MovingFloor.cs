@@ -37,7 +37,7 @@ public class MovingFloor : Floor
 
     public virtual void BackAndForth()
     {
-        rb.velocity = direction.normalized * speed;
+        rb.linearVelocity = direction.normalized * speed;
         if ((transform.position - startPos).magnitude >= direction.magnitude)
         {
             speed = speed * -1;

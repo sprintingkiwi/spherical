@@ -21,7 +21,7 @@ public class WheelGiant : Giant
             if (onTheFloor == true)
             {
                 CheckDirection();
-                rb.velocity = new Vector3(targetDirection.x * speed, 0.0f, 0.0f);                                
+                rb.linearVelocity = new Vector3(targetDirection.x * speed, 0.0f, 0.0f);                                
                 if (transform.position.x < target.transform.position.x)
                 {
                     animator.SetFloat("movementSpeed", -speed / 35);

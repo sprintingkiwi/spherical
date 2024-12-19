@@ -23,7 +23,7 @@ public class Sand : MonoBehaviour
         if (other.GetComponent<Actor>() != null)
         {
             Rigidbody orb = other.gameObject.GetComponent<Rigidbody>();
-            orb.AddForce(rb.velocity * force);
+            orb.AddForce(rb.linearVelocity * force);
         }
     }
 }

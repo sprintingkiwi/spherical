@@ -29,7 +29,7 @@ public class AdeptGuru : Guru
             }
             if ((transform.position - target.transform.position).magnitude < (minDistance - 1))
             {
-                rb.velocity = targetDirection * -speed * 2;
+                rb.linearVelocity = targetDirection * -speed * 2;
             }
 
             if (tooFar == false)
@@ -40,11 +40,11 @@ public class AdeptGuru : Guru
                     if (distance.magnitude > minDistance)
                     {
                         //rb.AddForce(distance.normalized * speed);
-                        rb.velocity = targetDirection * speed;
+                        rb.linearVelocity = targetDirection * speed;
                     }
                     else
                     {
-                        rb.velocity = new Vector3(0, 0, 0);
+                        rb.linearVelocity = new Vector3(0, 0, 0);
                     }
                 }
 
@@ -59,7 +59,7 @@ public class AdeptGuru : Guru
                 if (distance.magnitude > minDistance * 2)
                 {
                     //rb.AddForce(distance.normalized * speed);
-                    rb.velocity = targetDirection * speed * 5;
+                    rb.linearVelocity = targetDirection * speed * 5;
                 }
                 else
                 {

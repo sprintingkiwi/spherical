@@ -46,7 +46,7 @@ public class Pressor : AutonomousElement
                 {
                     if ((transform.position - endPos).magnitude < (startPos - endPos).magnitude)
                     {
-                        rb.velocity = Vector3.up * upSpeed;
+                        rb.linearVelocity = Vector3.up * upSpeed;
                     }
                     else
                     {

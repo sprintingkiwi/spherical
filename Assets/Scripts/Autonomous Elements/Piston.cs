@@ -60,7 +60,7 @@ public class Piston : AutonomousElement
             {
                 if ((transform.position - startPos).magnitude < run)
                 {
-                    rb.velocity = -transform.forward * pushSpeed;
+                    rb.linearVelocity = -transform.forward * pushSpeed;
                 }
                 else
                 {
@@ -72,11 +72,11 @@ public class Piston : AutonomousElement
             {
                 if ((transform.position - endPos).magnitude < run)
                 {
-                    rb.velocity = transform.forward * returnSpeed;
+                    rb.linearVelocity = transform.forward * returnSpeed;
                 }
                 else
                 {
-                    rb.velocity = Vector3.zero;
+                    rb.linearVelocity = Vector3.zero;
                     startTime = Time.time;
                     actualPhase = Phase.wait;
                 }

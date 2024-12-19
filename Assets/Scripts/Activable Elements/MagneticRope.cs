@@ -47,7 +47,7 @@ public class MagneticRope : ActivableElement
             if (playerController.powerButton == true && isActive == true)
             {                
                 transform.Find("Tracker").position = player.transform.position;
-                playerController.rb.velocity = Vector3.zero;
+                playerController.rb.linearVelocity = Vector3.zero;
                 player.transform.RotateAround(transform.position, transform.forward, attractionForce / 2 * Time.deltaTime * polarity);
                 transform.Find("Rope").LookAt(player.transform);
             }

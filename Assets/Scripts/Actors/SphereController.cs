@@ -56,7 +56,7 @@ public class SphereController : Actor
         base.LateUpdate();
 
         // UPDATE ATTRIBUTES EVERY FRAME
-        velocityMagnitude = rb.velocity.magnitude;
+        velocityMagnitude = rb.linearVelocity.magnitude;
 
         // ANDROID CONTROL        
         if (Application.platform == RuntimePlatform.Android)
@@ -132,7 +132,7 @@ public class SphereController : Actor
         }
         else
         {
-            rb.AddForce(rb.velocity.normalized * autoAcceleration);
+            rb.AddForce(rb.linearVelocity.normalized * autoAcceleration);
         }
 
         Breath(breathSpeed);

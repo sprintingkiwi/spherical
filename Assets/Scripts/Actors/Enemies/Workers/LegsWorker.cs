@@ -33,7 +33,7 @@ public class LegsWorker : Worker
                 {
                     targetDirection = new Vector3(targetDirection.x, 0.0f, 0.0f);
                 }                
-                rb.velocity = (targetDirection * speed) + new Vector3(0.0f, jH, 0.0f);
+                rb.linearVelocity = (targetDirection * speed) + new Vector3(0.0f, jH, 0.0f);
             }
         }
         else
