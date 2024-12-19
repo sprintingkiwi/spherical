@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class AudioEffect : MonoBehaviour
 {
+    public bool repeat;
     AudioSource effect;
+    bool done;
 
     // Start is called before the first frame update
     void Start()
     {
         effect = gameObject.GetComponent<AudioSource>();
+        done = false;
     }
 
     // Update is called once per frame
@@ -22,7 +25,11 @@ public class AudioEffect : MonoBehaviour
     {
         if (other.name == "Sphere")
         {
-            effect.Play();
+            if (!done || repeat)
+            {
+                effect.Play();
+                done = true;
+            }
         }
     }
 
